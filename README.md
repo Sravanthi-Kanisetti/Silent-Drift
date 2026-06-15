@@ -51,24 +51,34 @@ no ML required.
 | Mixed gender formats | ~2,000 |
 
 ---
-
 ## 📁 Project Structure
-\```
+
+<details>
+<summary>Click to expand project structure</summary>
+
+```text
 ecommerce-churn-analysis/
+│
 ├── README.md
+│
 ├── sql/
 │   ├── 01_data_exploration.sql
-│   ├── 02_data_cleaning.sql
-│   ├── 03_analysis.sql
+│   ├── 02_data_cleaning_and_validation.sql
+│   ├── 03_deep_analysis.sql
 │   └── 04_views.sql
+│
 ├── dashboard/
 │   ├── page1_executive_overview.png
-│   ├── page2_customer_behavior.png
-│   └── page3_revenue_risk.png
+│   ├── page2_customer_analysis.png
+│   └── page3_risk_analysis.png
+│
 └── docs/
     ├── data_dictionary.md
     └── key_findings.md
-\```
+```
+
+</details>
+
 
 ---
 
