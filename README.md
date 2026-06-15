@@ -5,8 +5,7 @@
 
 ## 📌 Project Overview
 End-to-end churn analysis on 1,05,000 realistic Indian 
-e-commerce customer records. Built entirely with SQL — 
-no ML required.
+e-commerce customer records. Built entirely with SQL.
 
 ---
 
