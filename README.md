@@ -118,5 +118,8 @@ ecommerce-churn-analysis/
 ---
 
 ## 👤 Author
-**Your Name**
-[LinkedIn](your-linkedin-url)
+
+**Kanisetti Sravanthi**
+
+LinkedIn: https://www.linkedin.com/in/sravanthi-kanisetti-116a542b6
+
