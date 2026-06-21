@@ -1,0 +1,333 @@
+# 🔇 Silent Exit — E-Commerce Customer Churn Analysis
+
+> *"Customers don't always say goodbye. They just stop showing up."*
+
+**Tools:** BigQuery · SQL · Looker Studio · Google Cloud Platform
+**Dataset:** 1,05,000 rows · 34 columns · Jan 2021 – Jun 2024
+
+---
+
+## 📊 Live Dashboard
+
+🔗 **[View Interactive Dashboard](https://datastudio.google.com/reporting/aaa25d00-0e9b-4db2-867e-b3bb14ed35dd)**
+
+---
+
+## 📌 What is Silent Exit?
+
+In e-commerce, most customers don't cancel — they simply **stop buying**.
+No warning. No complaint. No goodbye.
+This is called **Silent Churn** — and it costs businesses millions.
+
+**This project answers:**
+- How many customers silently exited — and how much revenue did we lose?
+- Which customers are about to exit next?
+- What behaviour patterns predict a silent exit?
+- How do we stop it before it happens?
+
+---
+
+## 🖼️ Dashboard Preview
+
+### Page 1 — Executive Overview
+![Executive Overview](dashboard/Page_1.jpeg)
+
+### Page 2 — Customer Behavioral Analysis
+![Customer Behavior](dashboard/Page_2.jpeg)
+
+### Page 3 — Revenue & Risk Analysis
+![Revenue Risk](dashboard/Page_3.jpeg)
+
+### Page 4 — Customer Profile Deepdive
+![Customer Profile](dashboard/Page_4.png)
+
+---
+
+## 📊 Dashboard Pages
+
+| Page | Title | Story |
+|------|-------|-------|
+| **Page 1** | Executive Overview | What is our overall churn situation? |
+| **Page 2** | Customer Behavioral Analysis | Who churns and when? |
+| **Page 3** | Revenue & Risk Analysis | Where is money at risk? |
+| **Page 4** | Customer Profile Deepdive | Geographic and category patterns |
+
+---
+
+## 🔑 Key Findings From Dashboard
+
+---
+
+### 📋 Page 1 — Executive Overview
+
+| Metric | Value |
+|--------|-------|
+| **Total Customers** | 89,075 |
+| **Churn Rate** | 37.43% |
+| **Churned Customers** | 33,340 |
+| **Revenue Lost** | ₹543.6M |
+| **Active Customers** | 55,735 |
+| **Total Revenue** | ₹1.92 Billion |
+| **Active Revenue Share** | 71.9% |
+| **Churned Revenue Share** | 28.1% |
+
+#### Membership Tier Churn Rates
+
+| Tier | Churn Rate |
+|------|------------|
+| **None** | 53.08% |
+| **Silver** | 38.66% |
+| **Gold** | 30.15% |
+| **Platinum** | 23.68% |
+
+#### Yearly Churn Growth
+
+| Year | Churned Count |
+|------|--------------|
+| **2021** | 1,500 |
+| **2022** | 6,800 |
+| **2023** | 14,000 |
+| **2024** | 11,000 (Jan–Jun only) |
+
+> 💡 **Insight:** None-tier members are 2x more likely to churn than Platinum, and yearly churn has grown 9x since 2021 — signaling an urgent need for retention intervention.
+
+---
+
+### 👥 Page 2 — Customer Behavioral Analysis
+
+| Metric | Value |
+|--------|-------|
+| **Total Complaints** | 26,830 |
+| **Total Orders** | 887,510 |
+| **Total Sessions** | 674,973 |
+| **Avg Order Value** | ₹1,637.65 |
+| **Total Revenue Lost** | ₹543.6M |
+
+#### Churn Rate by Recency Bucket
+
+| Recency Bucket | Churn Rate |
+|----------------|------------|
+| **0–30 days** | 16.47% |
+| **31–90 days** | 15.71% |
+| **91–180 days** | 24.48% |
+| **181–365 days** | 40.40% |
+| **365+ days** | **54.48%** ⬅ Highest |
+| **Unknown** | 36.70% |
+
+#### Churn Rate by Device
+
+| Device | Churn Rate |
+|--------|------------|
+| **Mobile App** | 38.01% |
+| **Desktop** | 37.83% |
+| **Tablet** | 37.10% |
+| **Mobile** | 37.02% |
+
+#### Churn Rate by Gender
+
+| Gender | Churn Rate |
+|--------|------------|
+| **Female** | 37.62% |
+| **Male** | 37.33% |
+| **Other** | 37.03% |
+| **Unknown** | 36.76% |
+
+#### Churn Rate by Age Group
+
+| Age Group | Churn Rate |
+|-----------|------------|
+| **Unknown** | 38.87% |
+| **36-45** | 38.12% |
+| **18-25** | 37.44% |
+| **56+** | 37.44% |
+| **46-55** | 37.06% |
+| **26-35** | 37.01% |
+
+#### Churn Rate by Acquisition Channel
+All channels uniform at **36–38%**. Facebook Ads, Influencer, Google Ads, Email Campaign, Instagram, Affiliate all at **38%**. WhatsApp lowest at **36%**.
+
+> 💡 **Insight:** Customers inactive for 365+ days churn at 54.48% — nearly 3x higher than recent buyers, making timely re-engagement the #1 retention priority.
+
+---
+
+### 💰 Page 3 — Revenue & Risk Analysis
+
+| Metric | Value |
+|--------|-------|
+| **High Risk Customers** | 9,069 |
+| **Medium Risk Customers** | 38,931 |
+| **Revenue At Risk** | ₹9.84M |
+| **Avg Risk Score** | 39.9 |
+| **Lost Customers** | 2,672 |
+
+#### Risk Tier Distribution
+
+| Risk Tier | % of Base |
+|-----------|-----------|
+| 🟢 **Low Risk** | 44.5% |
+| 🟡 **Medium Risk** | 45% |
+| 🔴 **High Risk** | 10.5% |
+
+#### Revenue by Risk Tier
+
+| Risk Tier | Revenue |
+|-----------|---------|
+| **Low Risk** | ₹1.15B |
+| **Medium Risk** | ₹758.84M |
+| **High Risk** | ₹9.84M |
+| **Grand Total** | ₹1.92B |
+
+#### Customer Segments — RFM Model
+
+| Segment | Customers |
+|---------|-----------|
+| **At Risk** | 27,079 |
+| **Loyal Customers** | 25,975 |
+| **About to Churn** | 17,987 |
+| **Champions** | 12,829 |
+| **Lost** | 2,672 |
+
+> 💡 **Insight:** High-risk customers (10.5% of base) hold ₹9.84M revenue at risk — immediate retention outreach needed before they churn.
+
+---
+
+## 🗂️ Dataset Overview
+
+| Detail | Value |
+|--------|-------|
+| **Source** | Synthetically generated realistic Indian e-commerce data |
+| **Size** | 1,05,000 rows · 34 columns |
+| **Period** | January 2021 – June 2024 |
+| **Churn Rate** | 37.43% |
+| **Total Revenue** | ₹1.92 Billion |
+
+### Intentional Data Quality Issues — Real-world Simulation
+
+| Issue | Description | Count |
+|-------|-------------|-------|
+| **Null/invalid emails** | Missing @, junk values (N/A, null@, test@) | ~2,400 |
+| **Invalid ages** | Values like 0, -1, 150, 999 | ~500 |
+| **Negative spend** | Negative total_spent_inr values | ~182 |
+| **Membership typos** | Sivler, G0ld, Platinium, Platnium | ~3% rows |
+| **Impossible returns** | total_returns > total_orders | ~1,050 |
+| **Future signup dates** | Dates beyond June 2024 | 50 rows |
+| **Duplicate records** | Same customer multiple times | ~1,575 |
+| **Mixed gender formats** | M, F, 0, 1, male, MALE, female | ~2,000 |
+| **Mixed payment formats** | upi, CREDIT CARD, cod, Net banking | ~1,800 |
+| **Invalid ratings** | Values outside 1–5 range | ~900 |
+
+---
+
+## 🔧 Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| **Google BigQuery** | Data storage, cleaning, analysis |
+| **SQL (BigQuery dialect)** | All transformations, window functions, RFM scoring |
+| **Looker Studio** | 4-page interactive dashboard |
+| **Google Cloud Platform** | Cloud infrastructure |
+| **Python (pandas, numpy)** | Dataset generation |
+
+---
+
+## 📁 Project Structure
+
+```
+silent-exit/
+│
+├── README.md
+│
+├── sql/
+│   ├── 01_data_exploration.sql
+│   ├── 02_data_cleaning.sql
+│   ├── 03_analysis.sql
+│   └── 04_views.sql
+│
+├── docs/
+│   ├── data_dictionary.md
+│   ├── key_findings.md
+│   └── project_flow.html
+│
+├── dashboard/
+│   ├── Page_1.jpeg
+│   ├── Page_2.jpeg
+│   ├── Page_3.jpeg
+│   └── Page_4.png
+│
+└── data/
+    ├── customers_raw.jpeg
+    └── customers_clean.png
+```
+
+---
+
+## 🧹 Data Cleaning Highlights
+
+All cleaning done using `CREATE OR REPLACE TABLE` in BigQuery.
+Raw data is **never modified** — cleaning creates a separate `clean_customers` table.
+
+| Column | Issue Found | Fix Applied |
+|--------|-------------|-------------|
+| **email** | Nulls, missing @, junk values | CASE + LIKE + IN checks |
+| **phone** | Mixed formats (+91-XXXXX), short numbers | REGEXP_REPLACE + RIGHT(10) |
+| **gender** | M/F/0/1/male/MALE formats | UPPER + CASE standardization |
+| **age** | Impossible values (0, -1, 150, 999) | NULL out invalid range |
+| **membership_tier** | Typos: Sivler, G0ld, Platinium | LOWER + IN list matching |
+| **total_spent_inr** | Negatives, zero with orders | ABS() for negatives, NULL for zeros |
+| **avg_order_value_inr** | Missing but calculable | Recalculate from spent ÷ orders |
+| **total_returns** | Returns > Orders (impossible) | Cap at total_orders |
+| **avg_product_rating** | Values outside 1–5 range | NULL out invalid |
+| **duplicates** | ~1,575 duplicate records | ROW_NUMBER() + QUALIFY |
+
+---
+
+## 📈 Analysis Layers
+
+| Layer | Description | Key Finding |
+|-------|-------------|-------------|
+| **Layer 1** | Overall KPIs | 37.43% churn · ₹543.6M lost · 55,735 active |
+| **Layer 2** | Recency Analysis | 365+ days → 54.48% churn vs 16.47% recent |
+| **Layer 3** | Segment Analysis | All devices/channels uniform ~37–38% |
+| **Layer 4** | Revenue Impact | ₹9.84M at immediate risk |
+| **Layer 5** | RFM + Risk Scoring | 9,069 High Risk · 27,079 At Risk segment |
+
+---
+
+## 🚨 Risk Score Distribution
+
+| Risk Tier | Customers | % of Base | Revenue |
+|-----------|-----------|-----------|---------|
+| 🟢 **Low Risk** | ~39,075 | 44.5% | ₹1.15B |
+| 🟡 **Medium Risk** | 38,931 | 45% | ₹758.84M |
+| 🔴 **High Risk** | 9,069 | 10.5% | ₹9.84M |
+
+---
+
+## 💡 Business Recommendations
+
+| Priority | Action | Impact |
+|----------|--------|--------|
+| 🔴 **P1** | Contact 9,069 High Risk customers immediately | ₹9.84M protected |
+| 🔴 **P1** | Re-engagement campaign after 90 days inactivity | Reduce 54.48% churn |
+| 🟡 **P2** | Push Silver upgrades to None-tier (53.08% churn) | Target Platinum level 23.68% |
+| 🟡 **P2** | Exit surveys for 33,340 churned customers | Identify root causes |
+| 🟢 **P3** | Monthly churn monitoring alerts | Early warning system |
+| 🟢 **P3** | Win-back campaign for 2,672 Lost segment | Revenue recovery |
+
+---
+
+## 💼 Resume Description
+
+> **Silent Exit — E-Commerce Customer Churn Analysis** | BigQuery · SQL · Looker Studio · GCP
+> - Cleaned and analyzed **1,05,000 customer records**, resolving 15+ real-world data quality issues including invalid emails, impossible ages, negative spend, duplicates, and mixed-format fields
+> - Built a **SQL-based RFM churn risk scoring model** (no ML) — identified **9,069 high-risk customers** representing **₹9.84M revenue at immediate risk**
+> - Discovered customers inactive 365+ days churn at **54.48% vs 16.47%** for recent buyers — 3x higher
+> - Quantified **₹543.6M revenue lost** to churn (28.1% of ₹1.92B total revenue)
+> - Delivered **4-page interactive Looker Studio dashboard** with RFM risk scoring, customer segments, recency analysis, and business insight notes
+
+---
+
+## 👤 Author
+
+**Poojitha Attili**
+[LinkedIn](https://www.linkedin.com/in/poojitha-attili/) · [Live Dashboard](https://datastudio.google.com/reporting/aaa25d00-0e9b-4db2-867e-b3bb14ed35dd)
