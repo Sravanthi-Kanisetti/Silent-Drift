@@ -214,15 +214,15 @@ This project answers:
 ## 📁 Project Structure
 
 ```
-Silent-Drfit/
+Silent-Drift/
 │
 ├── README.md
 │
-├── sql/
-│   ├── 01_data_exploration.sql
-│   ├── 02_data_cleaning.sql
-│   ├── 03_analysis.sql
-│   └── 04_views.sql
+├── BigQuery_SQL_Scripts/
+│   ├── 01.data_exploration.sql
+│   ├── 02.data_cleaning_validation.sql
+│   ├── 03.deep_analysis_RFM.sql
+│   └── 04.creating_views.sql
 │
 ├── docs/
 │   ├── data_dictionary.md
@@ -230,9 +230,9 @@ Silent-Drfit/
 │   └── project_flow.html
 │
 ├── dashboard/
-│   ├── Page_1.jpeg
-│   ├── Page_2.jpeg
-│   ├── Page_3.jpeg
+│   ├── page1_executive_overview.png
+│   ├── page2_customer_analysis.png
+│   ├── page3_risk_analysis.png
 │
 │
 └── data/
