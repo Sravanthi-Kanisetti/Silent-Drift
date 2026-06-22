@@ -1,5 +1,5 @@
 # 📊 Key Findings & Business Recommendations
-## Silent Exit — E-Commerce Churn Analysis
+## Silent Drift — E-Commerce Churn Analysis
 
 ---
 
